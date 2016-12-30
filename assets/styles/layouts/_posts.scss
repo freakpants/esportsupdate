@@ -41,6 +41,8 @@ article {
 	.image-area{
 		background-color: $brand-primary;
 		width:100%;
+		padding-top:15px;
+		padding-bottom:15px;
 	}
 	
 	.image-area img{
@@ -58,7 +60,7 @@ article {
 	
 }
 
-#comments{
+#comments, #respond{
 	padding-left:80px;	
 	padding-right:80px;
 	padding-top:10px;
@@ -72,6 +74,14 @@ article {
 	.logged-in-as a{
 		color:white;
 	}
+}
+
+.comment-form input[type=submit]{
+	color: $brand-primary;
+	background-color: white;
+	font-weight:bold;
+	margin-bottom: 15px;
+	border: 2px solid;
 }
 
 

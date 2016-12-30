@@ -15,10 +15,14 @@ if (post_password_required()) {
 
 <section id="comments" class="comments">
   <?php if (have_comments()) : ?>
-    <h2><?php printf(_nx('1 Kommentar', '%1$s Kommentare', get_comments_number(), 'comments title', 'sage'), number_format_i18n(get_comments_number()), '<span>' . get_the_title() . '</span>'); ?></h2>
+    <?php printf(_nx('1 Kommentar', '%1$s Kommentare', get_comments_number(), 'comments title', 'sage'), number_format_i18n(get_comments_number()), '<span>' . get_the_title() . '</span>'); ?>
 
     <ol class="comment-list">
-      <?php wp_list_comments(['style' => 'ol', 'short_ping' => true]); ?>
+      <?php 
+	  
+	  $args = array( 'style' => 'ol', 'short_ping' => true, 'reply_text' => __( 'Antworten' ) ) ;
+	  
+	  wp_list_comments( $args ); ?>
     </ol>
 
     <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : ?>
