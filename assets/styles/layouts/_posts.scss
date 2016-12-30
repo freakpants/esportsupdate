@@ -2,14 +2,14 @@ article {
 	border: 6px solid $brand-primary;
 	float:left;
 	width:48%;
-	
-	header img {
-		width:100%;
-		height:auto;
-	}
 	margin-bottom: 15px;
 	margin-right: 10px;
 	
+}
+
+.home article header img {
+	width:100%;
+	height:auto;
 }
 
 .single-post #comments {
@@ -40,7 +40,16 @@ article {
 	
 	.image-area{
 		background-color: $brand-primary;
+		width:100%;
 	}
+	
+	.image-area img{
+		display: block;
+		margin: 0 auto;
+		max-width:100%;
+		height:auto;
+	}
+	
 	
 	.comment-body{
 		border: 6px solid $brand-primary;
