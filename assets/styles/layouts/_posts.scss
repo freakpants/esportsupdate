@@ -131,8 +131,18 @@ article {
 		padding-right:10px;
 	}
 	
+	header.navbar.navbar-default{
+		height:auto;
+	} 
 }
 
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $brand-primary;
+}
+
+
+/**** RESPONSIVE ****/
 // tablets
 @media screen and (min-width: 768px){
 	.entry-title{
@@ -143,6 +153,11 @@ article {
 		height: 40px;
 		padding-left: 15px;
 	}
+	
+	header.navbar.navbar-default{
+		height:80px;
+	} 
+	
 }
 
 // desktop 	
