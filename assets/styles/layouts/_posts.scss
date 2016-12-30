@@ -1,7 +1,6 @@
 article {
 	border: 6px solid $brand-primary;
 	float:left;
-	width:48%;
 	margin-bottom: 15px;
 	margin-right: 10px;
 	
@@ -152,6 +151,10 @@ article {
 		font-size:40px;
 	}
 	
+	article{
+		width:48%;
+	}
+	
 	#comments, #respond {
 		padding-left:80px;	
 		padding-right:80px;
@@ -163,6 +166,7 @@ article {
 	.entry-title{
 		font-size:50px;
 	}
+
 	
 	#comments, #respond {
 		padding-left:80px;	

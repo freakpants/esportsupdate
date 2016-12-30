@@ -6520,7 +6520,6 @@ header.navbar.navbar-default {
 article {
   border: 6px solid #ff11c5;
   float: left;
-  width: 48%;
   margin-bottom: 15px;
   margin-right: 10px; }
 
@@ -6619,6 +6618,8 @@ article {
 @media screen and (min-width: 992px) {
   .entry-title {
     font-size: 40px; }
+  article {
+    width: 48%; }
   #comments, #respond {
     padding-left: 80px;
     padding-right: 80px; } }
