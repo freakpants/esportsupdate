@@ -1,0 +1,80 @@
+article {
+	border: 6px solid $brand-primary;
+	float:left;
+	width:48%;
+	
+	header img {
+		width:100%;
+		height:auto;
+	}
+	margin-bottom: 15px;
+	margin-right: 10px;
+	
+}
+
+.single-post #comments {
+	background-color:white;
+}
+
+.single-post article{
+	width:100%;
+	border: 15px solid $brand-primary;
+	
+	.entry-title{
+		font-size:55px;
+		font-weight: 600em;
+
+		padding-top:40px;
+		padding-bottom:20px;
+		letter-spacing: -3px;
+	}
+	
+	.excerpt, .entry-title, .entry-content {
+		padding-left:80px;	
+		padding-right:80px;
+	}
+	
+	.excerpt {
+		padding-bottom:20px;
+	}
+	
+	.image-area{
+		background-color: $brand-primary;
+	}
+	
+	.comment-body{
+		border: 6px solid $brand-primary;
+		padding:10px;
+	}
+	
+}
+
+#comments{
+	padding-left:80px;	
+	padding-right:80px;
+	padding-top:10px;
+	background-color: $brand-primary;
+	#reply-title{
+		text-transform: uppercase;
+		color:white;
+		font-size:12px;
+		font-weight:bold;
+	}
+	.logged-in-as a{
+		color:white;
+	}
+}
+
+
+.entry-title a, h1{
+	text-transform:uppercase;
+	color:$brand-primary;
+	font-weight: bold;
+}
+
+.entry-title, .entry-summary , .entry-content {
+	color:$brand-primary;
+	padding-left:10px; 
+	padding-right:10px;
+	margin-top:5px;
+}

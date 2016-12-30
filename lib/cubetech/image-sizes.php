@@ -7,3 +7,5 @@
 	 */
 
 	// add_image_size( 'ct-reference-overview-example', 1200, 800, false );
+	
+add_image_size( 'ct-reference-overview-example', 1200, 800, false );

@@ -1,21 +1,26 @@
-
 <?php
   // This file assumes that you have included the nav walker from https://github.com/twittem/wp-bootstrap-navwalker
   // somewhere in your theme.
+global $theme_options;
 ?>
 
 <header class="banner navbar navbar-default navbar-static-top" role="banner">
-  <div class="container">
+	<div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" title="<?php echo $blog_name; ?>" href="<?= esc_url( home_url( '/' ) ); ?>">
+			<?php if( isset( $theme_options['theme_logo'] ) && $theme_options['theme_logo'] !== false ) : ?>
+				<img src="<?php echo $theme_options['theme_logo']; ?>">
+			<?php else : ?>
+			<?php echo $blog_name; ?>
+			<?php endif; ?>
+		</a>
     </div>
-
     <nav class="collapse navbar-collapse" role="navigation">
       <?php
       if (has_nav_menu('primary_navigation')) :

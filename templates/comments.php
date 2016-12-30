@@ -32,5 +32,11 @@ if (post_password_required()) {
     </div>
   <?php endif; ?>
 
-  <?php comment_form(); ?>
+  <?php 
+  
+  $comment_field = '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>';
+  
+  $args = array("title_reply" => 'Hinterlass hier deinen Senf. Oder lass es bleiben.', "comment_field" => $comment_field);
+  
+  comment_form( $args ); ?>
 </section>
