@@ -17,3 +17,7 @@
   @extend .btn;		
   @extend .btn-primary;		
 }
+
+#comments .comment-reply-title{
+	color: $brand-primary !important;
+}
