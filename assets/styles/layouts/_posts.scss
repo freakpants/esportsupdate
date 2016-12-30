@@ -21,7 +21,6 @@ article {
 	border: 15px solid $brand-primary;
 	
 	.entry-title{
-		font-size:55px;
 		font-weight: 600em;
 
 		padding-top:40px;
@@ -29,9 +28,11 @@ article {
 		letter-spacing: -3px;
 	}
 	
-	.excerpt, .entry-title, .entry-content {
-		padding-left:80px;	
-		padding-right:80px;
+	@media screen and (min-width: 700px){ 
+		.excerpt, .entry-title, .entry-content {
+			padding-left:80px;	
+			padding-right:80px;
+		}
 	}
 	
 	.excerpt {
@@ -61,8 +62,6 @@ article {
 }
 
 #comments, #respond{
-	padding-left:80px;	
-	padding-right:80px;
 	padding-top:10px;
 	background-color: $brand-primary;
 	#reply-title{
@@ -112,4 +111,66 @@ article {
 	background-color: transparent !important;
 	color: black !important;
 }
+
+// mobile
+@media screen and (max-width: 767px){
+	header.navbar.navbar-default .navbar-brand img {
+		height: 20px;
+		padding-left: 15px;
+	}
+	
+	.single-post article{
+
+		.excerpt, .entry-title, .entry-content {
+			padding-left:10px;	
+			padding-right:10px;
+		}	
+	}
+	
+	#comments, #respond {
+		padding-left:10px;	
+		padding-right:10px;
+	}
+	
+}
+
+// tablets
+@media screen and (min-width: 768px){
+	.entry-title{
+		font-size: 36px;
+	}
+	
+	header.navbar.navbar-default .navbar-brand img {
+		height: 40px;
+		padding-left: 15px;
+	}
+}
+
+// desktop 	
+@media screen and (min-width: 992px){
+	.entry-title{
+		font-size:40px;
+	}
+	
+	#comments, #respond {
+		padding-left:80px;	
+		padding-right:80px;
+	}
+}
+
+// large desktop
+@media screen and (min-width: 1200px){
+	.entry-title{
+		font-size:50px;
+	}
+	
+	#comments, #respond {
+		padding-left:80px;	
+		padding-right:80px;
+	}
+}		
+
+
+
+
 
