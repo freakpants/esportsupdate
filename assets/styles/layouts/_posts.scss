@@ -97,3 +97,19 @@ article {
 	padding-right:10px;
 	margin-top:5px;
 }
+
+.navbar-default .navbar-nav>.active>a{
+	background-color: transparent;
+}
+
+.menu-item-40 a{
+	@extend .glyphicon;
+	@extend .glyphicon-info-sign;
+	color: $brand-primary !important;
+}
+
+.menu-item-40 a:hover{
+	background-color: transparent !important;
+	color: black !important;
+}
+
